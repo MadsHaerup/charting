@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#chart-one {
+  height: 75%;
+  width: 80%;
+  margin: 0 auto;
+}
