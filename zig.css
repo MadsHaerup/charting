@@ -36,7 +36,7 @@ body {
   overflow-y: scroll;
 }
 button {
-  border-radius: 5px;
+  border: none;
   height: 130px;
   background-image: linear-gradient(to left top, #6f6e68, #73726d, #777672, #7b7b77, #7f7f7c, #82827f, #858581, #888884, #8a8a84, #8d8c85, #8f8e85, #929085);
 }

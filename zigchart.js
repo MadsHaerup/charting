@@ -1,3 +1,4 @@
+document.querySelector(".title").innerHTML = " Star Wars <br> Data";
 const fetchParams = {
   method: "GET",
   mode: "cors",
@@ -34,7 +35,7 @@ fetch(url, fetchParams)
         true3d: false
       },
       title: {
-        text: "Fetch Star Wars",
+        text: "",
         adjustLayout: true,
         color: "#fff"
       },
