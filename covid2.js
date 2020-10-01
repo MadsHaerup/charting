@@ -45,101 +45,14 @@ fetch(url, fetchParams)
 
         // ZingChart Libary───────────────────────────────────────────────────────────
         var chartOneData = {
-            "type": "bar3d",
-            '3d-aspect': {
-                "true3d": "false",
-                "angle": "0",
-                'x-angle': "0",
-                'y-angle': "0",
-                'z-angle': "0",
-            },
-            "title": {
-                "text": "",
-                "adjustLayout": true,
-                "color": "#fff"
-            },
-            "tooltip": {
-                "text": 'Country: %kt<br>Total Deaths: %vv',
-                "color": "#144552",
-                "background.color": "#fff"
-            },
-            "preview": {
-                "height": "10%",
-                "width": "100%",
-                "x": "8%",
-                "y": "0%",
-
-            },
-            "scroll-y": {
-                "handle": {
-                    "background-color": "#144552",
-                    "alpha": "0.5",
-                    "border-radius": "10px",
-                    "height": "10px" //scroll-x only
-                },
-                "bar": {
-                    "alpha": "0.5",
-                    'background-color': "#fff",
-                    'border-radius': "2px",
-                    "height": "50px", //scroll-x only
-                },
-            },
-            "scroll-x": {
-                "handle": {
-                    "background-color": "#144552",
-                    "alpha": "0.5",
-                    "border-radius": "10px",
-                    "height": "10px" //scroll-x only
-                },
-                "bar": {
-                    "alpha": "0.5",
-                    'background-color': "#fff",
-                    'border-radius': "2px",
-                    "height": "50px", //scroll-x only
-                },
-
-            },
-
-            "scale-x": {
-                "zooming": true,
-                "zoom-to": [0, 50],
-                "item": {
-                    "font-size": 10
-                },
-                "label": {
-                    "text": 'Characters',
-                    "color": "#000",
-                },
-            },
-            "scale-y": {
-                "zooming": true,
-                "zoom-to": [0, 200000],
-                "item": {
-                    "font-size": 10
-                },
-                "label": {
-                    "text": 'Total Deaths',
-                    "color": "#000",
-                }
-            },
-            "plot": {
-                "background-color": "#fff",
-                "bar-width": "50%",
-                facets: {
-                    front: { 'background-color': "#000 #0055BF" },
-                    right: { 'background-color': "#3EA4F9 #0055BF" },
-                    left: { 'background-color': "#3EA4F9 #0055BF" },
-                    top: { 'background-color': "white" },
-                    bottom: { 'background-color': "white" }
-                },
-            },
-
+            "type": "line",
             "series": [{
                 "values": covidData
-            }],
-            "plotarea": {
-                "margin": 'dynamic'
-            }
+            }, {
+                "values": [5, 30, 21, 18, 59, 50, 28, 33]
+            }, {
+                "values": [30, 5, 18, 21, 33, 41, 29, 15]
+            }]
         };
         zingchart.render({
             id: "chart-one",
