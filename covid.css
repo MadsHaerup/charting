@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: "scroll title" "scroll chart";
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
+    /* ───────────────────────────────── */
+    background-color: #fff;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    font-size: 4vw;
+    color: #000;
+    font-family: 'Faster One', cursive;
+}
+
+#chart-one {
+    grid-area: chart;
+    width: 100%;
+}
+
+.button_list {
+    grid-area: scroll;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+button {
+    border: none;
+    height: 130px;
+    box-shadow: 5px 10px 8px 10px #888888;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    /* background-image: linear-gradient(to left top, #6f6e68, #73726d, #777672, #7b7b77, #7f7f7c, #82827f, #858581, #888884, #8a8a84, #8d8c85, #8f8e85, #929085); */
+}
